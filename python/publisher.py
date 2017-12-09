@@ -1,10 +1,10 @@
 from time import sleep
 import paho.mqtt.client as mqtt
 
-HOST = '127.0.0.1'
+HOST = '192.168.3.11'
 PORT = 1883
 KEEP_ALIVE = 60
-TOPIC = 'test_topic/test1'
+TOPIC = 'BHX'
 MESSAGE = 'test message'
 
 PUBLISH_NUMBER = 5
@@ -23,7 +23,7 @@ def publish_many_times(client, topic='topic/default', message='default', number=
 if __name__ == '__main__':
     client = mqtt.Client(protocol=mqtt.MQTTv311)
 
-    print "publish start " + str(type(client))
+    print ("publish start " + str(type(client)))
 
     client.connect(HOST, port=PORT, keepalive=KEEP_ALIVE)
 
