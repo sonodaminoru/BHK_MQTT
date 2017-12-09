@@ -1,7 +1,7 @@
 from time import sleep
 import paho.mqtt.client as mqtt
 
-HOST = '192.168.3.11'
+HOST = '192.168.3.11' #ブローカーを動かしているアドレス
 PORT = 1883
 KEEP_ALIVE = 60
 TOPIC = 'BHX'
